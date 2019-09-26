@@ -1,4 +1,3 @@
-import scala.util.Sorting.quickSort
 object no_5 extends App{
   // this code can be significantly minimized if we used Two-dimensional arrays.
   var student1_score = new Array[Double](5) // 5 is the size of the array
@@ -35,7 +34,6 @@ object no_5 extends App{
   var failingScores = totalScores.filter(x => x<250)
   for (i<- failingScores) println( if(failingScores)  i else "None")// print the failers if there is more than one failer. else print None
   //Find highest and lowest scores
-  quickSort(totalScores) //sort array in dec
   println(s"Highest score: ${totalScores.max}")
   println(s"Lowest score: ${totalScores.min}")
 }
